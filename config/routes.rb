@@ -1,5 +1,5 @@
-Groupd::Application.routes.draw do
-  resources :addresses
+Blog::Application.routes.draw do
+  resources :posts
 
 
   # The priority is based upon order of creation:

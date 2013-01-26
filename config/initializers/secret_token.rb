@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Groupd::Application.config.secret_token = '33a93ff46143537c0eda9b496c380dc9df89a9dc8f7f0bb8623f199a07332ab829ba3889de0b246a34652cc4bcc9daf6f9914ae7aa519aa472890895d0744d13'
+Blog::Application.config.secret_token = '309a2288318c925bb05a3216bb695d3896c19540785f8882dad4030a312317e47a85ae1897ed87f7a1714808e7bbe9aea12afe07eb23004a20d1730aa9b67de0'
