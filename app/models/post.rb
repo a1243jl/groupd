@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :name, :title, :modfi, :contentid
+  attr_accessible :content, :name, :title
 end
