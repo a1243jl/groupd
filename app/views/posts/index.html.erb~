@@ -14,7 +14,7 @@
   <tr>
     <td><%= post.name %></td>
     <td><%= post.title %></td>
-    <td><%= params[:modfi] %></td>
+    <td><%= modfi %></td>
     <td><%= link_to '閲覧', post %></td>
     <td><%= link_to '編集', edit_post_path(post) %></td>
     <td><%= link_to '削除', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

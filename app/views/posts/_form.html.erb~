@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
- 
+  <% post[modfi]=Time.now %>
 
   <div class="field">
     <%= f.label :name %><br />

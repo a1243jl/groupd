@@ -3,4 +3,4 @@
 <%= render 'form' %>
 
 <%= link_to 'このブログを閲覧する', @post %> |
-<%= link_to '詳細画面へいく', posts_path %>
+<%= link_to '戻る', posts_path %>
