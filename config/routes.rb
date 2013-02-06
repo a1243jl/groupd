@@ -1,7 +1,10 @@
 Blog::Application.routes.draw do
   resources :posts
 
-  resources :sessions 
+  resources :users
 
+  resources :sessions
+
+  root :to => "home#index"
   
 end
