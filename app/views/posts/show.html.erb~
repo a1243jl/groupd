@@ -1,20 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>作成者:</b>
   <%= @post.name %>
 </p>
 
 <p>
-  <b>Title:</b>
+  <b>題名:</b>
   <%= @post.title %>
 </p>
 
 <p>
-  <b>Content:</b>
+  <b>内容:</b>
+  <font style="border-style:solid;border-color:#000000;border-width:1;height:1;">
   <%= @post.content %>
+  </font>
 </p>
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to '編集', edit_post_path(@post) %> |
+<%= link_to '戻る', posts_path %>

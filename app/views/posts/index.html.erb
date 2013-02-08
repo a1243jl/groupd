@@ -1,28 +1,30 @@
-<h1>ブログ詳細画面</h1>
+<h1>あなたのホーム画面</h1>
 
-<table>
-  <tr>
-    <th>名前</th>
-    <th>題名</th>
-    <th>作成日時</th>
-    <th>更新日時</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<br />
 
 <% @posts.each do |post| %>
+<table>
   <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></td>
-    <td><%= post.updated_at.strftime("%Y-%m-%d %H:%M") %></td>
+    <td colspan="3">作成者:<%= post.name %></td>
+  </tr>
+  <tr>
+    <td colspan="3">題名:<%= post.title %></td>
+  </tr>
+  <tr>
+    <td colspan="3">作成日時:<%= post.created_at.strftime("%Y年 %m月 %d日 %H:%M") %></td>
+  </tr>
+  <tr>
+    <td colspan="3">更新日時:<%= post.updated_at.strftime("%Y年 %m月 %d日 %H:%M") %></td>
+  </tr>
+  <tr>
     <td><%= link_to '閲覧', post %></td>
     <td><%= link_to '編集', edit_post_path(post) %></td>
-    <td><%= link_to '削除', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '削除', post, method: :delete, data: { confirm: '削除しますがよろしいですか?' } %></td>
   </tr>
-<% end %>
 </table>
+<br />
+<% end %>
+
 
 <br />
 
