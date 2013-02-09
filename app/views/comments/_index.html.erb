@@ -1,0 +1,17 @@
+<strong>コメント</strong>
+<ul>
+ <% if @post.comments.size < 2 %> 
+    <li>No comments.</li>
+ <% else %>
+    <% @post.comments.each do |comment| %>
+    <% unless comment.id.nil? %>
+       <li><%= comment.body %>
+        <%= comment.created_at %>  
+	<%= link_to '削除', post_comment_path(@post, comment), confirm: '本当によろしいですか?', method: :delete %> </li>
+    <% end %> 
+    <% end %>
+ <% end %> 
+</ul>
+
+
+

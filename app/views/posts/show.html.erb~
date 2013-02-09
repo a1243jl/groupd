@@ -12,11 +12,11 @@
 
 <p>
   <b>内容:</b>
-  <font style="border-style:solid;border-color:#000000;border-width:1;height:1;">
   <%= @post.content %>
-  </font>
 </p>
 
-
-<%= link_to '編集', edit_post_path(@post) %> |
+<%= render 'comments/index'%>
+<%= render 'comments/form'%>
+<%= link_to 'コメントする', post_comments_path(@post) %>
+<%= link_to '編集', edit_post_path(@post) %> 
 <%= link_to '戻る', posts_path %>
